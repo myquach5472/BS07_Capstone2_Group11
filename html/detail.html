@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Shoes Shop - Product Detail Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Noto Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Bootstrap CSS v5.2.1 -->
@@ -16,27 +31,240 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
+    <header class="header text-white">
+      <div class="scontainer d-flex justify-content-between align-items-center">
+        <img src="../img/image3.png" alt="icon-cybersoft" />
+        <div class="header-item d-flex align-items-center">
+          <a href=""> <img src="../img/image8.png" alt="icon-shopcart" />(1)</a>
+          <a href="">Login</a>
+          <a href="./register.html">Register</a>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
+
+    <!-- Menu -->
+    <section class="menu">
+      <div class="scontainer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+                <a class="nav-link" href="#">Men</a>
+                <a class="nav-link" href="#">Woman</a>
+                <a class="nav-link" href="#">Kid</a>
+                <a class="nav-link" href="#">Sport</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main product detail section-->
+    <section class="product-detail">
+      <div class="container" id="shoe-detail">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="product-detail-left">
+              <img src="../img/image5.png" />
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="product-detail-right">
+              <p class="product-name">Product name</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                magni dolorum optio quas quos fugit possimus! Iure libero qui
+                quibusdam quaerat id iusto autem similique. Cum quos qui
+                repellendus corporis?
+              </p>
+              <p class="available-size">Available size</p>
+              <span>38</span>
+              <span>39</span>
+              <span>40</span>
+              <span>41</span>
+              <span>42</span>
+              <p class="price">85$</p>
+
+              <p class="quantity">
+                <button class="increase">+</button>
+                1
+                <button class="decrease">-</button>
+              </p>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related products -->
+    <section class="relate-product">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center">- Related Products -</h3>
+        </div>
+        <div class="row" id="list-shoes">
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-4">
+            <div class="card-product">
+              <img src="../img/image5.png" />
+              <p class="product-name">Adidas Prophere</p>
+              <p class="desc">short descript...</p>
+              <div class="button-wrapper">
+                <button class="buy-now">Buy now</button>
+                <span class="price">85$</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="scontainer">
+        <div class="row">
+          <!-- item1 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">GET HELP</h3>
+            <p>Contact us</p>
+            <p>Shopping</p>
+            <p>NIKEiD</p>
+            <p>Nike+</p>
+          </div>
+          <!-- item2 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">ORDERS</h3>
+            <p>Payment options</p>
+            <p>Shipping and delivery</p>
+            <p>Returns</p>
+          </div>
+          <!-- item3 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">REGISTER</h3>
+            <p>
+              Create one account to manager everything you do with Nike,from
+              your shopping preferences to your Nike+ activity.
+            </p>
+            <p><a href="" class="text-danger">Learn more</a></p>
+          </div>
+          <!-- item4 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">EMAIL SIGNUP</h3>
+            <p>Be the first to know about new products and special offers.</p>
+            <p><a href="" class="text-danger">Sign up now</a></p>
+          </div>
+          <!-- item5 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">GIFT CARDS</h3>
+            <p>Give the gift that always fits</p>
+            <p><a href="" class="text-danger">View cards</a></p>
+          </div>
+          <!-- item6 -->
+          <div class="sub-item col-6 col-lg-4">
+            <h3 class="fw-bold">STORES NEAR YOU</h3>
+            <p>Locate a Nike retail store or authorized retailer</p>
+            <p><a href="" class="text-danger">Search</a></p>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!-- Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
 
+    <!-- Axios JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
