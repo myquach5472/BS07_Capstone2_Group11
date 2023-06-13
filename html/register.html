@@ -95,7 +95,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="emailInput"
+                id="email"
                 aria-describedby="emailHelp"
                 placeholder="email"
               />
@@ -108,7 +108,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="nameInput"
+                id="name"
                 aria-describedby="nameHelp"
                 placeholder="name"
               />
@@ -121,7 +121,7 @@
               <input
                 type="password"
                 class="form-control"
-                id="passwordInput"
+                id="password"
                 aria-describedby="passwordHelp"
                 placeholder="password"
               />
@@ -134,7 +134,7 @@
               <input
                 type="phone"
                 class="form-control"
-                id="phoneInput"
+                id="phone"
                 aria-describedby="phoneHelp"
                 placeholder="phone"
               />
@@ -147,7 +147,7 @@
               <input
                 type="passwordConfirm"
                 class="form-control"
-                id="passwordConfirmInput"
+                id="passwordConfirm"
                 aria-describedby="passwordConfirmHelp"
                 placeholder="password confirm"
                 name="passwordConfirm"
@@ -157,7 +157,40 @@
             </div>
           </div>
           <div class="col-12 col-md-12 col-lg-6">
-            <div class="form-group">
+            <div class="mb-4">
+              <div class="d-flex justify-content-between">
+                <input
+                  type="radio"
+                  class="btn-check gender"
+                  name="gender"
+                  id="male"
+                  autocomplete="off"
+                  value="male"
+                />
+                <label
+                  class="button button--outline button--outline-rec me-4"
+                  for="male"
+                  >Male</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check gender"
+                  name="gender"
+                  id="female"
+                  autocomplete="off"
+                  value="female"
+                />
+                <label
+                  class="button button--outline button--outline-rec"
+                  for="female"
+                  >Female</label
+                >
+              </div>
+
+              <div id="genderHelp" class="form-text"></div>
+            </div>
+            <!--- <div class="form-group">
               <h5>Gender</h5>
               <div class="form-check">
                 <input
@@ -185,6 +218,7 @@
                 </label>
               </div>
             </div>
+            --->
           </div>
           <div class="col-12 col-md-12 col-lg-12 my-4">
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -260,5 +294,9 @@
 
     <!-- Main JS -->
     <script src="../Js/main.js"></script>
+    <script src="../models/User.js"></script>
+    <script src="../controllers/helper.js"></script>
+    <script src="../controllers/validator.js"></script>
+    <script src="../controllers/script.js"></script>
   </body>
 </html>
