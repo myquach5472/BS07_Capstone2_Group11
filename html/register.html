@@ -159,38 +159,9 @@
           <div class="col-12 col-md-12 col-lg-6">
             <div class="mb-4">
               <div class="d-flex justify-content-between">
-                <input
-                  type="radio"
-                  class="btn-check gender"
-                  name="gender"
-                  id="male"
-                  autocomplete="off"
-                  value="male"
-                />
-                <label
-                  class="button button--outline button--outline-rec me-4"
-                  for="male"
-                  >Male</label
-                >
-
-                <input
-                  type="radio"
-                  class="btn-check gender"
-                  name="gender"
-                  id="female"
-                  autocomplete="off"
-                  value="female"
-                />
-                <label
-                  class="button button--outline button--outline-rec"
-                  for="female"
-                  >Female</label
-                >
+                <div id="genderHelp" class="form-text"></div>
               </div>
-
-              <div id="genderHelp" class="form-text"></div>
-            </div>
-            <!--- <div class="form-group">
+            <div class="form-group">
               <h5>Gender</h5>
               <div class="form-check">
                 <input
@@ -218,10 +189,9 @@
                 </label>
               </div>
             </div>
-            --->
           </div>
           <div class="col-12 col-md-12 col-lg-12 my-4">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="btnSignUp">Submit</button>
           </div>
         </form>
       </div>
