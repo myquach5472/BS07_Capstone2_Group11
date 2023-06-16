@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cybersoft Shoes | Product Details</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <title>CapstoneG11</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -31,242 +33,152 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/main.css" />
+    <!-- font-awesome----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container-lg">
-          <div class="header__top-content">
-            <ul class="header__user-menu">
-              <li class="header__user-item">
-                <a href="../html/register.html" class="header__user-link"
-                  >Sign Up</a
-                >
-              </li>
-              <li class="header__user-item">
-                <a href="#" class="header__user-link">Sign In</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom container-lg">
-        <!-- <div class=""> -->
-        <div class="header__bottom-content">
-          <a href="./../index.html" class="header__logo-link">
-            <img src="../img/image3.png" alt="icon-cybersoft" />
-          </a>
-
-          <ul class="header__nav">
-            <li class="header__nav-item">
-              <a href="../index.html" class="header__nav-link">Home</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../index.html" class="header__nav-link">Men</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../index.html" class="header__nav-link">Women</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../index.html" class="header__nav-link">Kids</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../index.html" class="header__nav-link">Sports</a>
-            </li>
-          </ul>
-
-          <div class="header__icon-group">
-            <div class="header__icon-box">
-              <a
-                class="header__icon-link"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <div>
-                  <i class="fa-solid fa-xl fa-shopping-cart"></i>
-                  <span
-                    class="badge rounded-pill badge-notification bg-light text-dark"
-                    id="cartCount"
-                  ></span>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
+    <header>
+      <!-- upper navbar -->
+      <nav class="navbar bg-body-tertiary bg-black">
+        <div class="container-fluid">
+          <a class="fs-5 navbar-brand text-warning fw-bold" href="./index.html"
+            ><i class="fa-solid fa-socks"></i> CyberShoes</a
+          >
+          <div class="d-flex justify-content-end">
+            <a class="text-white me-3 nav-link active" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i>(<span
+                id="cartItem"
+              ></span
+              >)</a
             >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="offcanvas-nav">
-                  <li class="offcanvas-nav-item">
-                    <a href="" class="offcanvas-nav-link"
-                      >New & Featured
-                      <i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                  <li class="offcanvas-nav-item">
-                    <a href="" class="offcanvas-nav-link"
-                      >Men
-                      <i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                  <li class="offcanvas-nav-item">
-                    <a href="" class="offcanvas-nav-link"
-                      >Women
-                      <i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                  <li class="offcanvas-nav-item">
-                    <a href="" class="offcanvas-nav-link"
-                      >Kids
-                      <i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                  <li class="offcanvas-nav-item">
-                    <a href="" class="offcanvas-nav-link"
-                      >Sales
-                      <i class="fa fa-angle-right"></i>
-                    </a>
-                  </li>
-                </ul>
+            <a class="text-white me-3 nav-link active fs-6" href="#">Login</a>
+            <a class="text-white me-3 nav-link active fs-6" href="./login.html"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
 
-                <div class="offcanvas-button-box">
-                  <a
-                    href="./../register.html"
-                    class="button button--outline button--outline-1"
-                    >Sign Up</a
-                  >
-                  <a href="" class="button button--black button--black-1"
-                    >Sign In</a
-                  >
-                </div>
-              </div>
+      <!-- lowwer navbar -->
+      <nav
+        class="navbar lowerNavbar sticky-top navbar-expand-lg bg-body-tertiary bg-light"
+      >
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link me-2 active fw-bold"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Men</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Women</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Kids</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Sports</a>
             </div>
           </div>
         </div>
+      </nav>
 
-        <!-- </div> -->
-      </div>
+      <!-- place navbar here -->
     </header>
-    <main>
-      <section class="section-product-detail">
-        <div class="container-lg" id="productById"></div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container-lg">
-        <div class="footer__nav">
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+      <div class="bg-light pt-5 pb-3 mt-5">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-9 col-md-8">
-              <div class="row">
-                <div class="col-sm-4">
-                  <ul class="footer__list footer__list--1">
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >Become a Cybersoft member</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >Cybersoft discounts</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >Terms of use</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >Privacy policy</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-sm-4">
-                  <ul class="footer__list">
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >Get Help</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Order Status</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Returns</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Payment Options</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-sm-4">
-                  <ul class="footer__list">
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--header"
-                        >About Cybersoft Shoes</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Media Room</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Careers (We're hiring!)</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Investor Relations</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a href="#" class="footer__link footer__link--main"
-                        >Sustainability</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">GET HELP</h2>
+              <ul class="ps-0 mt-4 list-inline">
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Shopping</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#">NikeID</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#">Nike+</a>
+                </li>
+              </ul>
             </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">ORDERS</h2>
+              <ul class="ps-0 mt-4 list-inline">
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Payment Options</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Shipping and Delivery</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Returns</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">REGISTER</h2>
+              <p>
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="./login.html"
+                >Learn More>>></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lower footer  -->
+      <div class="bg-black text-white-50 pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">EMAIL SIGN UP</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="./login.html"
+                >Sign Up Now>>></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">GIFT CARDS</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="#"
+                >View Cards>>></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">STORES NEAR YOU</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="#">Search>>></a>
 
-            <div class="col-sm-3 col-md-4">
-              <div class="footer__icon-group">
-                <i class="fab fa-twitter footer__icon"></i>
-                <i class="fab fa-facebook-f footer__icon"></i>
-                <i class="fab fa-youtube footer__icon"></i>
-                <i class="fab fa-instagram footer__icon"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -293,8 +205,12 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- Main JS -->
-    <script src="../Js/script.js"></script>
-    <script src="../Js/detail.js"></script>
+    <!-- <script src="./models/employee.js"></script> -->
+    <script src="../Js/validation.js"></script>
+    <script src="../Js/user.js"></script>
+    <script src="../Js/Product.Js"></script>
+    <script src="../Js/helper.js"></script>
+    <script src="../Js/index.js"></script>
+
   </body>
 </html>
