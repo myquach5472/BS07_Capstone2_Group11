@@ -14,7 +14,7 @@ const validateEmail = function (inputValue, messageElement) {
             return true
         }
         else {
-            getEle(messageElement).innerHTML = 'Invalid Email. Please re-enter a email address.'
+            getEle(messageElement).innerHTML = 'Invalid Email. Please enter a valid email address.'
             return false
         }
     }
@@ -43,7 +43,7 @@ const validatePassword = function (inputValue, messageElement) {
 // Hàm validate password confirmation
 const validatePassConfirm = function (password, confirmPass, messageElement) {
     if (confirmPass == '') {
-        getEle(messageElement).innerHTML = 'Password do not match.'
+        getEle(messageElement).innerHTML = 'Password does not match.'
         return false
     }
     else {
@@ -52,7 +52,7 @@ const validatePassConfirm = function (password, confirmPass, messageElement) {
             return true
         }
         else {
-            getEle(messageElement).innerHTML = 'Password do not match.'
+            getEle(messageElement).innerHTML = 'Password does not match.'
             return false
         }
     }
@@ -63,7 +63,7 @@ const validateName = function (inputValue, messageElement) {
     const letters = /^[\p{L} ]+$/u;
 
     if (inputValue == '') {
-        getEle(messageElement).innerHTML = 'Please enter a valid name'
+        getEle(messageElement).innerHTML = 'Please enter a valid name.'
         return false
     }
     else {
@@ -72,7 +72,7 @@ const validateName = function (inputValue, messageElement) {
             return true
         }
         else {
-            getEle(messageElement).innerHTML = 'Please enter a valid name';
+            getEle(messageElement).innerHTML = 'Please enter a valid name.';
             return false
         }
     }
@@ -92,7 +92,7 @@ const validatePhone = function (inputValue, messageElement) {
             return true
         }
         else {
-            getEle(messageElement).innerHTML = 'Please enter a valid phone number'
+            getEle(messageElement).innerHTML = 'Please enter a valid phone number.'
             return false
         }
     }
@@ -106,7 +106,7 @@ const validateGender = function (arr, messageElement) {
             return true
         }
     }
-    getEle(messageElement).innerHTML = 'Please select a preference.'
+    getEle(messageElement).innerHTML = 'Please select your gender.'
     return false
 }
 

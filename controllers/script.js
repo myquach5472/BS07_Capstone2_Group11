@@ -15,7 +15,7 @@ function renderProduct(arr) {
                     </div>
                     <div class="product-card__info">
                         <h2 class="product-card__title">${productServer.name}</h2>
-                        <p class="product-card__subtitle">Men's Shoes</p>
+                        <p class="product-card__subtitle">Featured New Shoes</p>
                         <p class="product-card__short-desc">${productServer.shortDescription}</p>
                         <p class="product-card__price">$ ${productServer.price}</p>
                     </div>
