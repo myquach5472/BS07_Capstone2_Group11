@@ -50,7 +50,7 @@ function registerUser(userData) {
   );
   promise
     .then(function (result) {
-      // console.log(result);
+      console.log(result);
     })
     .catch(function (error) {
       // console.log(error);
