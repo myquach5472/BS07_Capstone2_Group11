@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <title>CapstoneG11</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,15 +17,271 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!-- font-awesome----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <!-- place navbar here -->
+      <!-- upper navbar -->
+      <nav class="navbar bg-body-tertiary bg-black">
+        <div class="container-fluid">
+          <a class="fs-5 navbar-brand text-warning fw-bold" href="./index.html"
+            ><i class="fa-solid fa-socks"></i> CyberShoes</a
+          >
+          <div class="d-flex justify-content-end">
+            <a class="text-white me-3 nav-link active" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i>(<span
+                id="cartItem"
+              ></span
+              >)</a
+            >
+            <a class="text-white me-3 nav-link active fs-6" href="#">Login</a>
+            <a class="text-white me-3 nav-link active fs-6" href="#"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- lowwer navbar -->
+      <nav
+        class="navbar lowerNavbar sticky-top navbar-expand-lg bg-body-tertiary bg-light"
+      >
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link me-2 active fw-bold"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Men</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Women</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Kids</a>
+              <a class="nav-link me-2 fw-bold" href="./detail.html">Sports</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="register mt-4">
+        <div class="container">
+          <h1 class="text-center mt-5 mb-5">REGISTER</h1>
+          <form id="registrationForm" class="mb-5" action="">
+            <div class="row">
+              <!-- email  -->
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold" for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <p class="error mt-1 text-danger" id="tbEmail"></p>
+              </div>
+              <!-- name  -->
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold" for="name">Name:</label>
+                <input
+                  type="text"
+                  class="form-control error"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <p class="mt-1 text-danger" id="tbName"></p>
+              </div>
+            </div>
+            <!-- password  -->
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold" for="password">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  required
+                />
+                <p class="error mt-1 text-danger" id="tbPass"></p>
+              </div>
+              <!-- password confirm  -->
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold" for="password-confirm"
+                  >Confirm Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password-confirm"
+                  name="password-confirm"
+                  required
+                />
+                <p class="error mt-1 text-danger" id="tbPassConfirm"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- phone  -->
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold" for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+                <p class="error mt-1 text-danger" id="tbPhone"></p>
+              </div>
+              <!-- gender  -->
+              <div class="col-md-6 mb-3">
+                <label class="fw-bold">Gender:</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                    required
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                    required
+                  />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <p class="error mt-1 text-danger" id="tbGender"></p>
+              </div>
+            </div>
+
+            <div class="row d-grid d-md-flex justify-content-md-end">
+              <div
+                class="col-md-6 mb-3 d-grid d-md-flex justify-content-md-start"
+              >
+                <button
+                  type="submit"
+                  id="btnAddUser"
+                  class="shadow-sm text-white fw-bold btn btn-warning ps-5 pe-5"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer>
       <!-- place footer here -->
+      <div class="bg-light pt-5 pb-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">GET HELP</h2>
+              <ul class="ps-0 mt-4 list-inline">
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Shopping</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#">NikeID</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#">Nike+</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">ORDERS</h2>
+              <ul class="ps-0 mt-4 list-inline">
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Payment Options</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Shipping and Delivery</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-black" href="#"
+                    >Returns</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">REGISTER</h2>
+              <p>
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="./login.html"
+                >Learn More>>></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lower footer  -->
+      <div class="bg-black text-white-50 pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">EMAIL SIGN UP</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="./login.html"
+                >Sign Up Now>>></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">GIFT CARDS</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="#"
+                >View Cards>>></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="fs-4 fw-bold">STORES NEAR YOU</h2>
+              <p class="fs-6">
+                Create one account to manage everything you do with Nike, from
+                your shopping preferences to your Nike+ activity.
+              </p>
+              <a class="text-danger text-decoration-none" href="#">Search>>></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -38,5 +295,19 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- axios  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <script src="./models/employee.js"></script> -->
+    <script src="../Js/validation.js"></script>
+    <script src="../Js/user.js"></script>
+    <script src="../Js/Product.Js"></script>
+    <script src="../Js/helper.js"></script>
+    <script src="../Js/index.js"></script>
   </body>
 </html>
